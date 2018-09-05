@@ -28,11 +28,16 @@
 	// echo $usuario;
 
 
+	// $usuario = new Usuario();
+	// $usuario->login("glauber", "!@#$");
+	// echo $usuario."<br>";
+	// $usuario->update("Glauber Nobrega", "03101987");
+	// echo $usuario."<br>";
+
+
 	$usuario = new Usuario();
-	$usuario->login("glauber", "!@#$");
-	echo $usuario."<br>";
-	$usuario->update("Glauber Nobrega", "03101987");
-	echo $usuario."<br>";
+	$usuario->loadById(20);
+	$usuario->delete();
 
 
  ?>
